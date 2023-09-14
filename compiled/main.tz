@@ -1,6 +1,8 @@
 { parameter (or (nat %checkWinner) (nat %submitNumber)) ;
   storage
-    (pair (pair (address %admin) (map %numbers nat address)) (option %winner address)) ;
+    (pair (pair (address %admin) (big_map %metadata string bytes))
+          (map %numbers nat address)
+          (option %winner address)) ;
   code { UNPAIR ;
          IF_LEFT
            { SENDER ;
@@ -11,13 +13,13 @@
              NEQ ;
              IF { PUSH string "Only admin can check winner" ; FAILWITH } {} ;
              DUP 2 ;
-             CAR ;
              CDR ;
+             CAR ;
              SWAP ;
              GET ;
              IF_NONE
                { DROP ; PUSH string "Number not picked" ; FAILWITH }
-               { SOME ; UPDATE 2 } }
+               { DUP 2 ; DIG 2 ; CDR ; DIG 2 ; SOME ; UPDATE 2 ; UPDATE 2 } }
            { DUP 2 ;
              CAR ;
              CAR ;
@@ -36,29 +38,39 @@
              OR ;
              IF { PUSH string "Number must be between 1 and 100" ; FAILWITH } {} ;
              DUP 2 ;
-             CAR ;
              CDR ;
+             CAR ;
              DUP 2 ;
              GET ;
              IF_NONE
                { DUP 2 ;
-                 CAR ;
                  CDR ;
+                 CAR ;
                  SENDER ;
                  DIG 2 ;
                  PAIR 3 ;
                  DUP 2 ;
                  DIG 2 ;
-                 CAR ;
+                 CDR ;
                  DIG 2 ;
                  UNPAIR 3 ;
                  SWAP ;
                  SOME ;
                  SWAP ;
                  UPDATE ;
-                 UPDATE 2 ;
-                 UPDATE 1 }
+                 UPDATE 1 ;
+                 UPDATE 2 }
                { DROP 3 ; PUSH string "Number already picked" ; FAILWITH } } ;
          NIL operation ;
-         PAIR } }
+         PAIR } ;
+  view "check_number"
+       nat
+       address
+       { UNPAIR ;
+         SWAP ;
+         CDR ;
+         CAR ;
+         SWAP ;
+         GET ;
+         IF_NONE { PUSH string "Number not picked" ; FAILWITH } {} } }
 

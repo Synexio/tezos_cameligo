@@ -1,0 +1,7 @@
+{
+  "name": "My Tezos Contract",
+  "version": "0.0.1",
+  "license": { "name": "ISC" },
+  "authors": [ "Alexandre Hannagan" ],
+  "interfaces": [ "TZIP-012" ]
+}

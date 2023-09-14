@@ -4,5 +4,6 @@ type t =
   {
    admin : address;
    winner : address option;
-   numbers : Types.numbers
+   numbers : Types.numbers;
+   metadata : Types.metadata;
   }

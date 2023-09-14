@@ -1,0 +1,1 @@
+export default "KT1QPUYN8A7D52R1X7Z4PQtY7kCog1tsxQ7Q"

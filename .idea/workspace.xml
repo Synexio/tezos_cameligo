@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20552285-d390-438f-bf73-ac66c5b34807" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/errors.mligo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/main.mligo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/old/main.mligo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/parameter.mligo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/storage.mligo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/types.mligo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/deploy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ligo/helpers/bootstrap.mligo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ligo/main.test.mligo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/actions.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mocharc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/call_submitNumber.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/sandbox_start" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/integration/helpers/bootstrap.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/integration/main.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compiled/main.json" beforeDir="false" afterPath="$PROJECT_DIR$/compiled/main.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compiled/main.tz" beforeDir="false" afterPath="$PROJECT_DIR$/compiled/main.tz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/main.mligo" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/main.mligo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/storage.mligo" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/storage.mligo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/types.mligo" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/types.mligo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/deploy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/deploy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ligo/helpers/bootstrap.mligo" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ligo/helpers/bootstrap.mligo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -42,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../taquito-react-template-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -53,6 +62,7 @@
       <recent name="C:\Users\alexh\OneDrive\Bureau\ESGI\5eme annee\Tezos\tezos_cameligo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alexh\OneDrive\Bureau\ESGI\5eme annee\Tezos\tezos_cameligo" />
       <recent name="C:\Users\alexh\OneDrive\Bureau\ESGI\5eme annee\Tezos\tezos_cameligo\contracts\old" />
     </key>
   </component>
@@ -66,7 +76,7 @@
       <updated>1694429160295</updated>
       <workItem from="1694429161634" duration="27890000" />
       <workItem from="1694592613428" duration="857000" />
-      <workItem from="1694593682864" duration="591000" />
+      <workItem from="1694593682864" duration="24990000" />
     </task>
     <servers />
   </component>
